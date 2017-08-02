@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:id="@+id/msgList"
+        >
+    </ListView>
+
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/chatMsg"
+        android:layout_weight="11"
+        android:text="send a message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="chatOnClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/clearChat"
+        android:layout_weight="11"
+        android:text="clear chat"
+        android:onClick="chatOnClick"/>
+</LinearLayout>

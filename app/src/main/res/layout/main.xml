@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="turn on BT"
+        android:onClick="onClick"
+        android:id="@+id/onBT"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="start scannig for BT servers"
+        android:id="@+id/startDiscovery"/>
+    <Button
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connect to device"
+        android:id="@+id/connect"/>
+    <Button
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start BT server"
+        android:id="@+id/startServer"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatRoom"
+        android:onClick="onClick"
+        android:text="go to chat room"/>
+
+    <fragment
+        android:name="com.example.bbamrin.mp20.ListOfDevices"
+        android:id = "@+id/listFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </fragment>
+
+</LinearLayout>
